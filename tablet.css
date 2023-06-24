@@ -1,0 +1,27 @@
+.bio__nombre{
+  font-size: 3.5rem;
+}
+.bio__oficio {
+  font-size: 2.1rem;
+  padding-top: 0.5rem;
+}
+.linea{
+  width: 21rem;
+  height: 3px;
+}
+
+.titlesocial {
+  font-size: 1.9rem;
+  padding: 2rem;
+  margin: 2rem auto;
+}
+
+.botton1{
+  width: 26rem;
+  height: 3.5rem;
+}
+
+.botton2{
+  width: 26rem;
+  height: 3.5rem;
+}
