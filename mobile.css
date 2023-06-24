@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  width: 100%;
+}
+
+body {
+  background-image: url(./img/Background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.bio {
+  text-align: center;
+  color: white;
+}
+
+.bio__nombre {
+  opacity: 0;
+  letter-spacing: -1.5px;
+  font-size: 3rem;
+  font-family: 'DM Serif Text', serif;
+  animation-name: aparicion_name;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode:forwards;
+}
+
+.linea{
+  display: inline-flex;
+  width: 20rem;
+  height: 3px;
+  border-radius: 1.5rem;
+  background-color: white;
+}
+
+.circle{
+  display:flex;
+  justify-content: center;
+  padding: 3rem;
+}
+.bio__oficio {
+  opacity: 0;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  padding-top: 0.3rem;
+  animation-name: aparicion-oficio;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+
+}
+.social{
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.social a{
+  padding: 1.5rem;
+}
+
+.titlesocial {
+  list-style: none;
+  font-size: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin: 3rem auto;
+}
+
+.botton1{
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #21D4FD;
+  background-image: linear-gradient(to right, #00c6ff 0%, #0072ff 100%);
+  border-radius: 20px;
+  width: 25rem;
+  height: 3rem;
+  margin: 1.8rem;
+  animation-name: aparicion;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+.botton2{
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #fff 0%, #ffffff 51%, #bac0c6 100%);
+  border-radius: 20px;
+  width: 25rem;
+  height: 3rem;
+  margin: 1.8rem;
+  animation-name: aparicion;
+  animation-duration: 1.5s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+.titlesocial__fansly {
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;  
+  padding: 0.5rem ;
+  height: 3rem;
+  margin: 1.8rem;
+  animation: none;
+
+}
+
+.titlesocial__item {
+  position: absolute;
+  color: #3c3c3c;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;  
+  padding: 1rem ;
+}
+
+@keyframes aparicion{
+  0%{
+    opacity: 0;
+    transform: scaleX(0.2) translateX(0px);
+  }
+  100%{
+    opacity: 1;
+    transform: scalex(1) translateX(0);
+  }
+}
+
+@keyframes aparicion_name {
+  0%{
+    opacity:0;
+    transform: translateY(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes aparicion-oficio{
+  0%{
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
